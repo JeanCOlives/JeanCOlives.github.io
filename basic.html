@@ -3,7 +3,10 @@
 <script src='vendor/ar.js/aframe/build/aframe-ar.js'></script>
 <script>ARjs.Context.baseURL = 'vendor/ar.js/three.js/'</script>
 <!-- include gps-ar.js -->
-<script src="../src/gps-camera-debug.js">
+
+
+<script type="text/javascript">
+	
 AFRAME.registerComponent('gps-camera-debug', {
 	init : function(){
 		var camera = this.el
@@ -75,13 +78,9 @@ AFRAME.registerComponent('gps-camera-debug', {
 	}
 })
 
-</script>
 
 
-
-
-
-<script src="../src/gps-camera-position.js">
+	
 AFRAME.registerComponent('gps-camera-position', {
 	
 	_watchPositionId: null,
@@ -174,11 +173,9 @@ AFRAME.registerComponent('gps-camera-position', {
 	
 })
 
-</script>
 
-
-
-<script src="../src/gps-camera-rotation.js">
+	
+	
 AFRAME.registerComponent('gps-camera-rotation', {
 	
 	lookControls: null,
@@ -301,13 +298,9 @@ AFRAME.registerComponent('gps-camera-rotation', {
 	
 })
 
+
 	
-</script>
-
-
-
-
-<script src="../src/gps-entity-place.js">
+	
 AFRAME.registerComponent('gps-entity-place', {
 	
 	_cameraGpsPosition: null,
@@ -375,6 +368,7 @@ AFRAME.registerComponent('gps-entity-place', {
 		this.el.setAttribute('position', position)
 	}
 })
+	
 </script>
 
 
