@@ -12,7 +12,7 @@ AFRAME.registerComponent('gps-camera-debug', {
 		//		Create html
 		//////////////////////////////////////////////////////////////////////////////
 		var domElement = document.createElement('div')
-		domElement.innerHTML = `
+		domElement.innerHTML = '
 		<!-- TODO build that directly in the javascript -->
 		<div style="position: fixed; top: 10px; width:100%; text-align: center; z-index: 1; text-shadow: -1px 0 white, 0 1px white, 1px 0 white, 0 -1px white;">
 			<div>
@@ -29,7 +29,7 @@ AFRAME.registerComponent('gps-camera-debug', {
 				yaw angle: <span id="yaw_angle"></span>
 			</div>
 		</div>
-		`
+		'
 		document.body.appendChild(domElement.children[0])
 
 		// TODO cleanup this code
